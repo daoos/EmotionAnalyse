@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- 400错误 -->
+	<error-page>
+		<error-code>400</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<!-- 404 页面不存在错误 -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<!-- 500 服务器内部错误 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+	</error-page>
+	<!-- java.lang.Exception异常错误,依据这个标记可定义多个类似错误提示 -->
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+	<!-- java.lang.NullPointerException异常错误,依据这个标记可定义多个类似错误提示 -->
+	<error-page>
+		<exception-type>java.lang.NullPointerException</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>javax.servlet.ServletException</exception-type>
+		<location>/error.jsp</location>
+	</error-page>
+
+	<servlet>
+		<servlet-name>EmotionListServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.EmotionListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmotionListServlet</servlet-name>
+		<url-pattern>/emotionlist</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmotionSourceServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.EmotionSourceServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmotionSourceServlet</servlet-name>
+		<url-pattern>/emotion_source</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmotionDetailServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.EmotionDetailServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmotionDetailServlet</servlet-name>
+		<url-pattern>/emotion_detail</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UploadSVGServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.UploadSVGServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadSVGServlet</servlet-name>
+		<url-pattern>/upload_svg</url-pattern>
+	</servlet-mapping>
+	<!-- 人脸检测 -->
+	<servlet>
+		<servlet-name>DetectUploadServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.DetectUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetectUploadServlet</servlet-name>
+		<url-pattern>/detect_upload</url-pattern>
+	</servlet-mapping>
+	<!-- 设置 -->
+	<servlet>
+		<servlet-name>SettingServlet</servlet-name>
+		<servlet-class>com.ibm.emotion.servlet.SettingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SettingServlet</servlet-name>
+		<url-pattern>/setting</url-pattern>
+	</servlet-mapping>
+</web-app>

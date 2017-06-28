@@ -1,0 +1,198 @@
+@CHARSET "UTF-8";
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+	margin: 0;
+}
+
+table>tr, td {
+	text-align: center;
+	padding: 10px;
+}
+
+table tr:nth-child(odd) {
+	background: #E9EAEC;
+}
+
+table td:nth-child(even) {
+	
+}
+
+table tr:hover {
+	background: #dce6f9;
+}
+
+.table-data-container {
+	padding-top: 120px;
+	padding-bottom: 60px;
+}
+
+.chart-container-td {
+	width: 45%;
+	padding-right: 0px;
+}
+
+.chart-container {
+	margin: auto;
+	height: 100px;
+	width: 100%;
+	background: #24313A;
+}
+
+.chart-container>img {
+	height: 100%;
+	width: 100%;
+}
+
+.cicle-color {
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	margin: auto;
+}
+
+.background-red-one {
+	background: rgb(238, 33, 43);
+}
+
+.background-red-two {
+	background: rgb(240, 26, 40);
+}
+
+.background-orange-three {
+	background: rgb(251, 144, 29);
+}
+
+.background-orange-four {
+	background: rgb(246, 150, 31);
+}
+
+.background-blue-five {
+	background: rgb(29, 159, 255);
+}
+
+.background-blue-six {
+	background: rgb(19, 162, 254);
+}
+
+.number-font-style {
+	font-size: 45px;
+}
+
+.color-red-one {
+	color: rgb(238, 33, 43);
+}
+
+.color-red-two {
+	color: rgb(240, 26, 40);
+}
+
+.color-orange-three {
+	color: rgb(251, 144, 29);
+}
+
+.color-orange-four {
+	color: rgb(246, 150, 31);
+}
+
+.color-blue-five {
+	color: rgb(29, 159, 255);
+}
+
+.color-blue-six {
+	color: rgb(19, 162, 254);
+}
+
+.customer-number-container {
+	text-align: left;
+	padding-left: 25px;
+}
+
+.customer-number-container-num {
+	font-size: 25px;
+	color: #07080A;
+	font-weight: bold;
+}
+
+.customer-number-container-num-two {
+	font-size: 12px;
+	color: #9FA0A4;
+}
+
+.time-container {
+	text-align: left;
+}
+
+.time-container>div {
+	margin: 10px;
+}
+
+.time-container>div>span {
+	margin-left: 10px;
+	color: #adaeaf;
+}
+
+.footer {
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background: #24313A;
+	bottom: 0;
+	z-index: 9999;
+}
+
+.button-td {
+	padding-left: 0px;
+}
+
+.custom-a-container {
+	height: 100px;
+	line-height: 100px;
+	background: #24313A;
+}
+
+.custom-a-btn {
+	border-color: #A7B1BA;
+	background-color: #24313A;
+	color: #A7B1BA;
+}
+
+.filter-container {
+	height: 60px;
+	background: white;
+	line-height: 60px;
+	padding-left: 20px;
+}
+
+.filter-option {
+	float: left;
+	margin-right: 40px;
+	color: #6392a5;
+}
+
+.filter-option>span {
+	padding: 5px;
+	border-radius: 3px;
+	text-decoration: none;
+}
+
+.filter-option>span:hover {
+	background: #5F94A5;
+	color: white;
+	cursor: pointer;
+}
+
+.filter-title {
+	color: #adaeaf;
+}
+
+.option-selecter{
+	background: #5F94A5;
+	color: white;
+}
